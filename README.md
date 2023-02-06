@@ -25,9 +25,11 @@ kubectl apply -f 03-whoami.yml \
               -f 04-whoami-ingress.yml
 ```
 If you've got no way to set your own DNS, set it up manually on /etc/hosts like that
-
-<<your_ip>> bear.kubectl
-<<your_ip>> moose.kubectl 
+```shell
+>> sudo vi /etc/hosts
+192.168.x.x bear.kubectl
+192.168.x.x moose.kubectl 
+```
 
 Your lb with respond differently based on what's on the header.
 
