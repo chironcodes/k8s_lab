@@ -1,6 +1,10 @@
 # k8s_lab
 
 
+# Clone with submodules
+git clone --recurse-submodules https://github.com/chironcodes/k8s_lab.git
+
+
 # Copy your remote config 
 ```shell
 scp -r user@192.168.x.x:.kube ~/
@@ -39,3 +43,5 @@ Your lb with respond differently based on what's on the header.
 ```shell
 kubectl get svc --all-namespaces -o wide
 ```
+
+kubectl 
